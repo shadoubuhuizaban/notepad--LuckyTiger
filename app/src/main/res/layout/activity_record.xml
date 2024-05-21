@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".RecordActivity">
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rlv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="698dp" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_24"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="20dp"
+        android:onClick="add"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_play_1"
+        android:layout_width="match_parent"
+        android:layout_height="698dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_play_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天也很幸福哦"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout >
