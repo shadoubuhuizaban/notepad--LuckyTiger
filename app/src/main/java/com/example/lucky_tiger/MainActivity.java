@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String username = mEtUser.getText().toString();
         String password = mEtPassword.getText().toString();
         //弹出的内容设置
-        String ok = "登录成功";
+        String ok = "欢迎主人回来快乐的世界！";
         String fail = "密码或账号有误，请重新登录！";
         Intent intent = null;
         //假设正确的账号密码是pms,123456

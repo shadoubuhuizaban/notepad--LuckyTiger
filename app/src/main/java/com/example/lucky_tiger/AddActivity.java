@@ -46,7 +46,7 @@ public class AddActivity extends AppCompatActivity {
         note.setCreatedTime(getCurrentTimeFormat());
         long row = mNoteDbOpenHelper.insertData(note);
         if(row != -1) {
-            ToastUtil.toastShort(this,"添加成功");
+            ToastUtil.toastShort(this,"哇！今天也是很幸福的一天呢");
             this.finish();
         }else {
             ToastUtil.toastShort(this,"添加失败");

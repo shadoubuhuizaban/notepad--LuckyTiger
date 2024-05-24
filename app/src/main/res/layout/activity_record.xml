@@ -7,10 +7,10 @@
     android:orientation="vertical"
     tools:context=".RecordActivity">
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/rlv"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="698dp" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv"
+        android:layout_width="match_parent"
+        android:layout_height="698dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
             android:id="@+id/tv_play_finish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="今天也很幸福哦"
+            android:text="主人的每一天都很值得期待呢"
             android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView

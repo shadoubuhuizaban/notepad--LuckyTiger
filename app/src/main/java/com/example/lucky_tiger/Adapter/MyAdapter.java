@@ -78,7 +78,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                         if(row > 0 ) {
                             removeData(position);
 
-                            ToastUtil.toastShort(mContext,"删除成功");
+                            ToastUtil.toastShort(mContext,"看来主人发生了更加快乐的事情哦");
                         }else {
                             ToastUtil.toastShort(mContext,"删除失败");
                         }

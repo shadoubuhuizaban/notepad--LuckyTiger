@@ -24,6 +24,12 @@
             android:parentActivityName=".RecordActivity"
             android:exported="true" />
         <activity
+            android:name=".PlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecordActivity"
             android:parentActivityName=".SlideActivity"
             android:exported="true" />

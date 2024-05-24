@@ -59,7 +59,7 @@ public class EditActivity extends AppCompatActivity {
         note.setCreatedTime(getCurrentTimeFormat());
         long rowId = mNoteDbOpenHelper.updateData(note);
         if(rowId != -1) {
-            ToastUtil.toastShort(this,"修改成功");
+            ToastUtil.toastShort(this,"主人的文笔变得更加优秀哦");
             this.finish();
         }else {
             ToastUtil.toastShort(this,"修改失败");

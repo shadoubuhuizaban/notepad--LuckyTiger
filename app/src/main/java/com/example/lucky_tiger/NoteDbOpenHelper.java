@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.text.TextUtils;
 
 import com.example.lucky_tiger.bean.Note;
 
@@ -73,6 +74,34 @@ public class NoteDbOpenHelper extends SQLiteOpenHelper {
 
                 noteList.add(note);
 
+            }
+            cursor.close();
+        }
+        return noteList;
+    }
+
+    public List<Note> queryFromDbByTitle(String title) {
+        if(TextUtils.isEmpty(title)) {
+            return queryAllFromDb();
+        }
+        SQLiteDatabase db = getWritableDatabase();
+        List<Note> noteList = new ArrayList<>();
+
+        Cursor cursor = db.query(TABLE_NAME_NOTE,null,"title like ?", new String[]{"%"+title+"%"},null,null,null);
+
+        if(cursor != null) {
+            while(cursor.moveToNext()) {
+                String id = cursor.getString(cursor.getColumnIndexOrThrow("id"));
+                String title2 = cursor.getString(cursor.getColumnIndexOrThrow("title"));
+                String content = cursor.getString(cursor.getColumnIndexOrThrow("content"));
+                String createTime = cursor.getString(cursor.getColumnIndexOrThrow("create_time"));
+
+                Note note = new Note();
+                note.setId(id);
+                note.setTitle(title2);
+                note.setContent(content);
+                note.setCreatedTime(createTime);
+                noteList.add(note);
             }
             cursor.close();
         }
