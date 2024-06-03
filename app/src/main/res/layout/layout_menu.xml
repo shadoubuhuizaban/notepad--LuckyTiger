@@ -11,47 +11,77 @@
         android:textSize="30sp"
         android:gravity="center"
         />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:layout_marginTop="360dp"
-        android:orientation="vertical">
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        android:padding="15dp">
 
-        <Button
-            android:id="@+id/btn_main_1"
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="免费心理咨询电话" />
+        <TextView
+            style="@style/TextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="今日心情速通"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            />
+            android:text="（座机拨打）" />
 
-        <Button
-            android:id="@+id/btn_main_2"
+        <TextView
+            style="@style/TextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="好事记录速通"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            />
-        <Button
-            android:id="@+id/btn_main_7"
+            android:text="800—810—1117" />
+        <TextView
+            style="@style/TextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="美食诱惑速通"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            />
-        <Button
-            android:id="@+id/btn_main_8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="娱乐至上速通"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            />
+            android:text="（手机拨打）" />
 
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="010-82951332" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="卫生健康热线" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12320" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="全国青少年心理咨询热线" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12355" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="全国妇女儿童心理咨询热线" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12338" />
 
 
     </LinearLayout>

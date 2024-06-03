@@ -47,7 +47,7 @@ public class TodayActivity extends AppCompatActivity {
             if(v.getId() == R.id.btn_today_1) {
                 intent = new Intent(TodayActivity.this, RecordActivity.class);
             }else if(v.getId() == R.id.btn_today_2) {
-                intent = new Intent(TodayActivity.this, RecordActivity.class);
+                intent = new Intent(TodayActivity.this, FoodActivity.class);
             }
             startActivity(intent);
         }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,81 +7,141 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FoodActivity">
-
-    <LinearLayout
+    
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
-
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/cat"
-            android:layout_gravity="center"
-
-            />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:layout_marginTop="360dp"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btn_food_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="火锅"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            />
-        <Button
-            android:id="@+id/btn_food_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="串串"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            />
-        <Button
-            android:id="@+id/btn_food_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="烧烤"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            />
-        <Button
-            android:id="@+id/btn_food_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="家常菜"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            />
-        </LinearLayout>
-
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            android:gravity="center_horizontal">
 
-            <TextView
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cat"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:id="@+id/btn_food_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beck贝克抑郁自评问卷"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:id="@+id/btn_food_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="艾森克情绪稳定性测验"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:id="@+id/btn_food_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一般自我效能感量表"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:id="@+id/btn_food_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A型B型性格测试"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:id="@+id/btn_food_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MBTI职业性格测试"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/btn_food_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="自信心测试"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:id="@+id/btn_food_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="乐观性测验量表"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:id="@+id/urlTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="主人快选择自己喜欢的测试进行吧"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="美食果然是幸福的源泉呀"
-                android:textColor="@color/black"
-                android:layout_marginTop="20dp"
-                android:textSize="20sp"/>
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="做完小测试感觉如何呀？"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"/>
 
 
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
-</ScrollView>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" /> <!-- 初始隐藏WebView -->
+
+</FrameLayout>

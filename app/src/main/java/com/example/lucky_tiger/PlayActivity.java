@@ -13,6 +13,7 @@ public class PlayActivity extends AppCompatActivity {
     private Button mPL2;
     private Button mPL3;
     private Button mPL4;
+    private Button mPL5;
 
 
     @Override
@@ -24,6 +25,7 @@ public class PlayActivity extends AppCompatActivity {
         mPL2 = findViewById(R.id.btn_play_2);
         mPL3 = findViewById(R.id.btn_play_3);
         mPL4 = findViewById(R.id.btn_play_4);
+        mPL5 = findViewById(R.id.btn_play_5);
 
         setListener();
 
@@ -35,6 +37,7 @@ public class PlayActivity extends AppCompatActivity {
         mPL2.setOnClickListener(onClick);
         mPL3.setOnClickListener(onClick);
         mPL4.setOnClickListener(onClick);
+        mPL5.setOnClickListener(onClick);
 
             /*mTD1.setOnClickListener(this);
             mTD2.setOnClickListener(this);*/
@@ -48,13 +51,15 @@ public class PlayActivity extends AppCompatActivity {
             Intent intent = null;
 
             if(v.getId() == R.id.btn_play_1) {
-                intent = new Intent(PlayActivity.this, RecordActivity.class);
+                intent = new Intent(PlayActivity.this,StandardActivity.class );
             }else if(v.getId() == R.id.btn_play_2) {
-                intent = new Intent(PlayActivity.this, RecordActivity.class);
+                intent = new Intent(PlayActivity.this, ClassifyActivity.class);
             }else if(v.getId() == R.id.btn_play_3) {
-                intent = new Intent(PlayActivity.this, RecordActivity.class);
+                intent = new Intent(PlayActivity.this, LevelActivity.class);
             }else if(v.getId() == R.id.btn_play_4) {
-                intent = new Intent(PlayActivity.this, RecordActivity.class);
+                intent = new Intent(PlayActivity.this, PreventActivity.class);
+            }else if(v.getId() == R.id.btn_play_5) {
+                intent = new Intent(PlayActivity.this, AgeActivity.class);
             }
             startActivity(intent);
         }

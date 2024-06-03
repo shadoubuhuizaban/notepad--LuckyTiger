@@ -16,14 +16,14 @@ public class SlideActivity extends AppCompatActivity {
     //声明控件
     private ImageView mIvhead;
     private SlideMenu slideMenu;
-    private Button mBtnToday;
-    private Button mBtnRecord;
+//    private Button mBtnToday;
+//    private Button mBtnRecord;
     private Button mBtnQToday;
     private Button mBtnQRecord;
     private Button mBtnFood;
     private Button mBtnPlay;
-    private Button mBtnQFood;
-    private Button mBtnQPlay;
+//    private Button mBtnQFood;
+//    private Button mBtnQPlay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +33,14 @@ public class SlideActivity extends AppCompatActivity {
         //找到控件
         mIvhead = findViewById(R.id.iv_head);
         slideMenu = findViewById(R.id.slideMenu);
-        mBtnToday = findViewById(R.id.btn_main_1);
-        mBtnRecord = findViewById(R.id.btn_main_2);
+//        mBtnToday = findViewById(R.id.btn_main_1);
+//        mBtnRecord = findViewById(R.id.btn_main_2);
         mBtnFood = findViewById(R.id.btn_main_5);
         mBtnPlay = findViewById(R.id.btn_main_6);
         mBtnQToday = findViewById(R.id.btn_main_3);
         mBtnQRecord = findViewById(R.id.btn_main_4);
-        mBtnQFood = findViewById(R.id.btn_main_7);
-        mBtnQPlay = findViewById(R.id.btn_main_8);
+//        mBtnQFood = findViewById(R.id.btn_main_7);
+//        mBtnQPlay = findViewById(R.id.btn_main_8);
 
 
         //实现侧滑部分，点击加侧滑
@@ -56,14 +56,14 @@ public class SlideActivity extends AppCompatActivity {
     private void setListener() {
         OnClick onClick = new OnClick();
         //对每一个按钮进行setOnClickListener
-        mBtnToday.setOnClickListener(onClick);
-        mBtnRecord.setOnClickListener(onClick);
+//        mBtnToday.setOnClickListener(onClick);
+//        mBtnRecord.setOnClickListener(onClick);
         mBtnQToday.setOnClickListener(onClick);
         mBtnQRecord.setOnClickListener(onClick);
         mBtnFood.setOnClickListener(onClick);
         mBtnPlay.setOnClickListener(onClick);
-        mBtnQFood.setOnClickListener(onClick);
-        mBtnQPlay.setOnClickListener(onClick);
+//        mBtnQFood.setOnClickListener(onClick);
+//        mBtnQPlay.setOnClickListener(onClick);
 
     }
 
@@ -72,11 +72,12 @@ public class SlideActivity extends AppCompatActivity {
         public void onClick(View v) {
             Intent intent = null;
 
-            if(v.getId() == R.id.btn_main_1) {
-                intent = new Intent(SlideActivity.this, TodayActivity.class);
-            }else if(v.getId() == R.id.btn_main_2) {
-                intent = new Intent(SlideActivity.this, RecordActivity.class);
-            }else if(v.getId() == R.id.btn_main_3) {
+//            if(v.getId() == R.id.btn_main_1) {
+//                intent = new Intent(SlideActivity.this, TodayActivity.class);
+//            }else if(v.getId() == R.id.btn_main_2) {
+//                intent = new Intent(SlideActivity.this, RecordActivity.class);
+//            }else
+            if(v.getId() == R.id.btn_main_3) {
                 intent = new Intent(SlideActivity.this, TodayActivity.class);
             }else if(v.getId() == R.id.btn_main_4) {
                 intent = new Intent(SlideActivity.this, RecordActivity.class);
@@ -84,10 +85,10 @@ public class SlideActivity extends AppCompatActivity {
                 intent = new Intent(SlideActivity.this, FoodActivity.class);
             }else if(v.getId() == R.id.btn_main_6) {
                 intent = new Intent(SlideActivity.this, PlayActivity.class);
-            }else if(v.getId() == R.id.btn_main_7) {
-                intent = new Intent(SlideActivity.this, FoodActivity.class);
-            }else if(v.getId() == R.id.btn_main_8) {
-                intent = new Intent(SlideActivity.this, PlayActivity.class);
+//            }else if(v.getId() == R.id.btn_main_7) {
+//                intent = new Intent(SlideActivity.this, FoodActivity.class);
+//            }else if(v.getId() == R.id.btn_main_8) {
+//                intent = new Intent(SlideActivity.this, PlayActivity.class);
             }
             startActivity(intent);
         }
