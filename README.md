@@ -1,1 +1,1 @@
-This is a Mental Assist System. You can use it to do somepsychological test and result analysis , notepad about daily mood and learn about psychological knowledge. I will expand its function like our AI friend. 
+This is a Mental Assist System. You can use it to do some psychological test and result analysis , notepad about daily mood and learn about psychological knowledge. I will expand its function like our AI friend. 
